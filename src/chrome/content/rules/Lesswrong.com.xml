@@ -1,0 +1,15 @@
+<!--
+	Nonfunctional hosts in *.lesswrong.com:
+
+	h: http redirect
+	m: certificate mismatch
+	r: connection refused
+	s: self-signed certificate
+	t: timeout on https
+-->
+<ruleset name="Lesswrong.com">
+	<target host="lesswrong.com" />
+	<target host="www.lesswrong.com" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>
